@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Gases</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Gases</h1>
+    <div class="input-row">
+      <input type="text" id="nivelInicial" placeholder="Nível Inicial">
+      <input type="text" id="nivelFinal" placeholder="Nível Final">
+    </div>
+    <div class="input-row">
+      <input type="text" id="fator" placeholder="Fator">
+      <input type="text" id="polegadas" placeholder="Polegadas Descarregadas" disabled>
+    </div>
+    <div class="button-row">
+      <button id="calculateNitrogenio">Calcular LIN</button>
+      <button id="calculateOxigenio">Calcular LOX</button>
+    </div>
+    <div class="button-row">
+      <button id="calculateArgonio">Calcular LAR</button>
+      <button id="clear">Limpar</button>
+    </div>
+    <div class="result-row">
+      <button id="pesoLiquido" disabled>Peso Líquido</button>
+      <button id="m3" disabled>M³</button>
+    </div>
+    <div class="footer">
+      <p>luizdovale - Versão 2.3</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

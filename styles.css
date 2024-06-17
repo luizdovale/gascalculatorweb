@@ -1,0 +1,104 @@
+/* Estilo global para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 400px;
+  }
+  
+  /* Estilo para o título h1 */
+  h1 {
+    text-align: center;
+    color: #1b5091;
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+  }
+  
+  /* Estilo para as linhas de inputs */
+  .input-row,
+  .button-row,
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+  }
+  
+  /* Estilo para inputs nas linhas de entrada */
+  .input-row input,
+  .button-row button,
+  .result-row button {
+    flex: 1;
+    margin: 0 2px;
+    padding: 12px; /* Aumentei o padding dos inputs e botões */
+    border: 2px solid #bdb9b9;
+    border-radius: 10px; /* Aumentei o raio do border-radius */
+    font-size: 13px; /* Tamanho da fonte dos inputs e botões */
+  }
+  
+  .result-row button {
+    flex: 1;
+    margin: 0 2px;
+    padding: 12px; /* Aumentei o padding dos botões */
+    border: 2px solid #bdb9b9;
+    border-radius: 10px; /* Aumentei o raio do border-radius */
+    font-size: 12px;
+    font-weight: bold; /* Tamanho da fonte dos botões */
+    color: #000; /* Cor do texto dos botões */
+  }
+  
+  .result-row button:hover {
+    background-color: #cccccc; /* Cor de fundo ao passar o mouse */
+  }
+  /* Estilo específico para botões na linha de botões */
+  .button-row button {
+    background-color: #1b5091;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+  }
+  
+  .button-row button:hover {
+    background-color: #0e3a6f; /* Cor do botão ao passar o mouse */
+  }
+  
+  .button-row button:disabled,
+  .result-row button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed; /* Cursor indicando que o botão está desativado */
+  }
+  
+  /* Estilo para o rodapé */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px; /* Tamanho da fonte do rodapé */
+    color: #666; /* Cor do texto do rodapé */
+  }
+  
+  /* Estilo específico para o botão Limpar */
+  #clear {
+    background-color: orange;
+    color: #fff; /* Cor do texto do botão Limpar */
+    font-weight: bold; /* Negrito no texto do botão Limpar */
+    padding: 12px 13px; /* Aumentei o padding horizontal do botão */
+    border-radius: 10px; /* Raio do border-radius do botão */
+  }
+  
+  #clear:hover {
+    background-color: #ff9900; /* Cor do botão Limpar ao passar o mouse */
+  }
+  
