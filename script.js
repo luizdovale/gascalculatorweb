@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         const m3 = pesoLiquido * factor;
         pesoLiquidoButton.textContent = `${pesoLiquido.toLocaleString('pt-BR')} kg`;
-        m3Button.textContent = `${m3.toLocaleString('pt-BR', { maximumFractionDigits: 3 }).replace('.', ',')} m³`;
+        m3Button.textContent = `${m3.toLocaleString('pt-BR', { maximumFractionDigits: 3 }).replace('.', '.')} m³`;
     }    
 
     function calculateNitrogenio() {
