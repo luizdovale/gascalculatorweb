@@ -112,7 +112,7 @@ h1 {
   flex: 1;
   margin: 0 2px;
   padding: 15px; /* Aumentei o padding dos botões */
-  border: 2px solid #bdb9b9;
+  border: 2px solid #7e7878;
   border-radius: 15px; /* Aumentei o raio do border-radius */
   font-size: 14px;
   font-weight: bold; /* Tamanho da fonte dos botões */
