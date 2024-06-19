@@ -67,17 +67,18 @@ h1 {
 .polegadas-input {
   height: auto;
   width: 272px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Estilo específico para o campo de resultado de polegadas */
-.polegadas-field {
-  font-size: 16px; /* Tamanho da fonte */
-  color: #ff0000; /* Cor do texto (vermelha) */
-  background-color: #f0f0f0; /* Cor de fundo do campo */
-  border: 2px solid #bdb9b9; /* Cor da borda */
-  padding: 10px; /* Padding */
-  border-radius: 15px; /* Raio da borda */
-  text-align: center; /* Alinhamento do texto ao centro */
+/* Alterar a cor da borda dos inputs quando focados */
+.input-row input:focus,
+.button-row button:focus,
+.result-row button:focus {
+  border-color: #1b5091; /* Mesma cor dos botões de cálculo */
+  outline: none; /* Remove o outline padrão do navegador */
 }
 
 /* Tooltip container */
@@ -113,7 +114,7 @@ h1 {
   padding: 15px; /* Aumentei o padding dos botões */
   border: 2px solid #bdb9b9;
   border-radius: 15px; /* Aumentei o raio do border-radius */
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold; /* Tamanho da fonte dos botões */
   color: #000; /* Cor do texto dos botões */
 }
@@ -141,11 +142,11 @@ h1 {
 }
 
 .calculate-oxigenio {
-  background-color: #0066cc; /* Cor de fundo azul */
+  background-color: #1b5091; /* Cor de fundo azul */
 }
 
 .calculate-argonio {
-  background-color: #009933; /* Cor de fundo verde */
+  background-color: #1b5091; /* Cor de fundo verde */
 }
 
 .calculate-nitrogenio:hover,
