@@ -66,7 +66,18 @@ h1 {
 
 .polegadas-input {
   height: auto;
-  width: 272px;/
+  width: 272px;
+}
+
+/* Estilo específico para o campo de resultado de polegadas */
+.polegadas-field {
+  font-size: 16px; /* Tamanho da fonte */
+  color: #ff0000; /* Cor do texto (vermelha) */
+  background-color: #f0f0f0; /* Cor de fundo do campo */
+  border: 2px solid #bdb9b9; /* Cor da borda */
+  padding: 10px; /* Padding */
+  border-radius: 15px; /* Raio da borda */
+  text-align: center; /* Alinhamento do texto ao centro */
 }
 
 /* Tooltip container */
