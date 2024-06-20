@@ -67,7 +67,7 @@ h1 {
 .polegadas-input {
   height: auto;
   width: 272px;
-  color: black;
+  color: black !important; /* !important para garantir que a cor seja aplicada */
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -112,11 +112,11 @@ h1 {
   flex: 1;
   margin: 0 2px;
   padding: 15px; /* Aumentei o padding dos botões */
-  border: 2px solid #7e7878;
+  border: 2px solid #bdb9b9;
   border-radius: 15px; /* Aumentei o raio do border-radius */
   font-size: 14px;
   font-weight: bold; /* Tamanho da fonte dos botões */
-  color: #000; /* Cor do texto dos botões */
+  color: #000 !important; /* Cor do texto dos botões */
 }
 
 .result-row button:hover {
