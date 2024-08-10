@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #7e7e7e;
+  background-color: #302f2f;
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,18 +12,18 @@ body {
 /* Container principal */
 .container {
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 40px;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
   padding: 30px;
-  height: 570px;
-  width: 350px;
+  height: 540px;
+  width: 320px;
 }
 
 /* Estilo para o título h1 */
 h1 {
   text-align: center;
   color: #1b5091;
-  font-size: 50px; /* Tamanho da fonte do título */
+  font-size: 48px; /* Tamanho da fonte do título */
   margin-bottom: 30px; /* Espaçamento abaixo do título */
 }
 
@@ -51,22 +51,22 @@ h1 {
 /* Estilo específico para inputs de fator, nivel inicial, nivel final e polegadas */
 .fator-input {
   height: auto;
-  width: 320px;
+  width: 290px;
 }
 
 .nivel-inicial-input {
   height: auto;
-  width: 145px;
+  width: 130px;
 }
 
 .nivel-final-input {
   height: auto;
-  width: 145px;
+  width: 130px;
 }
 
 .polegadas-input {
   height: auto;
-  width: 320px;
+  width: 290px;
   color: black !important; /* !important para garantir que a cor seja aplicada */
   font-size: 14px;
   font-weight: bold;
