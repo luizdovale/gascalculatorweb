@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #7e7e7e;
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,18 +13,18 @@ body {
 .container {
   background-color: #ffffff;
   border-radius: 50px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
   padding: 30px;
-  height: 580px;
-  width: 300px;
+  height: 570px;
+  width: 350px;
 }
 
 /* Estilo para o título h1 */
 h1 {
   text-align: center;
   color: #1b5091;
-  font-size: 24px; /* Tamanho da fonte do título */
-  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  font-size: 50px; /* Tamanho da fonte do título */
+  margin-bottom: 30px; /* Espaçamento abaixo do título */
 }
 
 /* Estilo para as linhas de inputs */
@@ -51,22 +51,22 @@ h1 {
 /* Estilo específico para inputs de fator, nivel inicial, nivel final e polegadas */
 .fator-input {
   height: auto;
-  width: 272px;
+  width: 320px;
 }
 
 .nivel-inicial-input {
   height: auto;
-  width: 120px;
+  width: 145px;
 }
 
 .nivel-final-input {
   height: auto;
-  width: 120px;
+  width: 145px;
 }
 
 .polegadas-input {
   height: auto;
-  width: 272px;
+  width: 320px;
   color: black !important; /* !important para garantir que a cor seja aplicada */
   font-size: 14px;
   font-weight: bold;
@@ -97,9 +97,9 @@ h1 {
   padding: 2px 5px;
   position: absolute;
   z-index: 1;
-  top: -5px; 
-  left: 10px;
-  font-size: 8px;
+  top: -10px; 
+  left: 5px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -111,9 +111,9 @@ h1 {
 .result-row button {
   flex: 1;
   margin: 0 2px;
-  padding: 15px; /* Aumentei o padding dos botões */
+  padding: 15px; /*  padding dos botões */
   border: 2px solid #bdb9b9;
-  border-radius: 15px; /* Aumentei o raio do border-radius */
+  border-radius: 15px; /*  raio do border-radius */
   font-size: 14px;
   font-weight: bold; /* Tamanho da fonte dos botões */
   color: #000 !important; /* Cor do texto dos botões */
@@ -125,15 +125,17 @@ h1 {
 
 /* Estilo específico para botões na linha de botões */
 .button-row button {
-  background-color: #1b5091;
+  background-color: #04326b;
   color: #fff;
+  font-size: 14px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Efeito de transição suave */
 }
 
 .button-row button:hover {
-  background-color: #0e3a6f; /* Cor do botão ao passar o mouse */
+  background-color: #4b95f0; /* Cor do botão ao passar o mouse */
 }
 
 /* Estilo específico para cada botão */
@@ -172,16 +174,16 @@ h1 {
 
 /* Estilo específico para o botão Limpar */
 .clear-button {
-  background-color: rgb(28, 88, 255);
-  color: #f7f7f7 !important; /* Cor do texto do botão Limpar */
+  background-color: rgb(194, 197, 201);
+  /*color: #f7f7f7 !important; /* Cor do texto do botão Limpar */
   font-weight: bold; /* Negrito no texto do botão Limpar */
-  padding: 12px 13px; /* Aumentei o padding horizontal do botão */
+  padding: 12px 13px; /* padding horizontal do botão */
   border-radius: 15px; /* Raio do border-radius do botão */
 }
 
 .clear-button:hover {
   background-color: #713ff8; /* Cor do botão Limpar ao passar o mouse */
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #050505 !important; /* Cor do texto do botão Limpar ao passar o mouse */
 }
