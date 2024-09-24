@@ -11,7 +11,7 @@ body {
 
 /* Container principal */
 .container {
-  background-color: #ffffff;
+  background-color: #dddddd;
   border-radius: 40px;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
   padding: 30px;
@@ -22,8 +22,8 @@ body {
 /* Estilo para o título h1 */
 h1 {
   text-align: center;
-  color: #1b5091;
-  font-size: 40px; /* Tamanho da fonte do título */
+  color: #13293d;
+  font-size: 45px; /* Tamanho da fonte do título */
   margin-bottom: 30px; /* Espaçamento abaixo do título */
 }
 
@@ -77,7 +77,7 @@ h1 {
 .input-row input:focus,
 .button-row button:focus,
 .result-row button:focus {
-  border-color: #1b5091; /* Mesma cor dos botões de cálculo */
+  border-color: #13293d; /* Mesma cor dos botões de cálculo */
   outline: none; /* Remove o outline padrão do navegador */
 }
 
@@ -125,7 +125,7 @@ h1 {
 
 /* Estilo específico para botões na linha de botões */
 .button-row button {
-  background-color: #04326b;
+  background-color: #13293d;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -135,20 +135,21 @@ h1 {
 }
 
 .button-row button:hover {
-  background-color: #4b95f0; /* Cor do botão ao passar o mouse */
+  background-color: #006494; /* Cor do botão ao passar o mouse */
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.8); /* Aumenta levemente o brilho no hover */
 }
 
 /* Estilo específico para cada botão */
 .calculate-nitrogenio {
-  background-color: #1b5091; /* Cor de fundo padrão */
+  background-color: #13293d; /* Cor de fundo padrão */
 }
 
 .calculate-oxigenio {
-  background-color: #1b5091; /* Cor de fundo azul */
+  background-color: #13293d; /* Cor de fundo azul */
 }
 
 .calculate-argonio {
-  background-color: #1b5091; /* Cor de fundo verde */
+  background-color: #13293d; /* Cor de fundo verde */
 }
 
 .calculate-nitrogenio:hover,
@@ -173,19 +174,26 @@ h1 {
 }
 
 /* Estilo específico para o botão Limpar */
-.clear-button {
-  background-color: rgb(194, 197, 201);
-  /*color: #f7f7f7 !important; /* Cor do texto do botão Limpar */
-  font-weight: bold; /* Negrito no texto do botão Limpar */
-  padding: 12px 13px; /* padding horizontal do botão */
-  border-radius: 15px; /* Raio do border-radius do botão */
+#clear {
+  background-color: #13293d;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  box-shadow: 0 0 5px rgba(0, 100, 148, 0.6); /* Efeito de neon mais suave */
 }
 
-.clear-button:hover {
-  background-color: #713ff8; /* Cor do botão Limpar ao passar o mouse */
-  font-size: 20px;
+#clear:hover {
+  background-color: #006494; /* Cor do botão ao passar o mouse */
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.8); /* Aumenta levemente o brilho no hover */
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  color: #050505 !important; /* Cor do texto do botão Limpar ao passar o mouse */
+  color: #ffffff !important; /* Cor branca para o texto no hover */
 }
 
 /* Estilo específico para o tamanho total */
