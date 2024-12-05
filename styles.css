@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #302f2f;
+  background-image: url('imagem de fundo natal.jpg'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho real da sua imagem */
+  background-size: cover; /* Faz a imagem preencher a tela inteira */
+  background-position: center; /* Centraliza a imagem na tela */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,19 +15,30 @@ body {
 /* Container principal */
 .container {
   background-color: #dddddd;
-  border-radius: 40px;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
-  padding: 30px;
-  height: 530px;
-  width: 290px;
+  border-radius: 25px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  height: 580px;
+  width: 550px;
 }
 
 /* Estilo para o título h1 */
 h1 {
   text-align: center;
   color: #13293d;
-  font-size: 45px; /* Tamanho da fonte do título */
-  margin-bottom: 30px; /* Espaçamento abaixo do título */
+  font-size: 40px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease; /* Efeito de transição */
+  opacity: 1; /* Para o fade-in e fade-out */
+}
+
+h2 {
+  text-align: center;
+  color: #13293d;
+  font-size: 30px;
+  margin-bottom: 30px;
+  transition: opacity 0.5s ease; /* Efeito de transição */
+  opacity: 1; /* Para o fade-in e fade-out */
 }
 
 /* Estilo para as linhas de inputs */
@@ -33,44 +47,49 @@ h1 {
 .result-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7px; /* Espaçamento entre as linhas */
+  margin-bottom: 8px; /* Espaçamento entre as linhas */
 }
 
 /* Estilo para inputs nas linhas de entrada */
 .input-row input,
-.button-row button,
+.button-row button {
+  flex-grow: 1; /* Garantir que todos ocupem o espaço disponível igualmente */
+  margin: 0 5px; /* Ajuste do espaçamento entre inputs/botões */
+  padding: 15px; /* Padding dos inputs e botões */
+  border: none; /* Remove a borda */
+  border-radius: 10px; /* Raio do border-radius para cantos arredondados */
+  font-size: 20px; /* Tamanho da fonte dos inputs e botões */
+  background: white; /* Fundo branco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de flutuação */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave ao interagir */
+}
+
 .result-row button {
-  flex: 1;
-  margin: 0 2px;
-  padding: 10px; /* padding dos inputs e botões */
-  border: 2px solid #bdb9b9;
-  border-radius: 15px; /*raio do border-radius */
-  font-size: 15px; /* Tamanho da fonte dos inputs e botões */
-}
-
-/* Estilo específico para inputs de fator, nivel inicial, nivel final e polegadas */
-.fator-input {
   height: auto;
-  width: 262px;
+  width: 48%; /* Ajuste de largura para manter o alinhamento responsivo */
+  margin-right: 4%; /* Espaçamento entre os botões */
+  padding: 15px; /* Padding interno para manter espaçamento */
+  background: white; /* Fundo branco */
+  border: none; /* Remove as bordas */
+  border-radius: 10px; /* Arredondamento dos cantos */
+  font-size: 20px; /* Tamanho da fonte */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de flutuação */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave ao interagir */
 }
 
-.nivel-inicial-input {
-  height: auto;
-  width: 115px;
-}
-
-.nivel-final-input {
-  height: auto;
-  width: 115px;
-}
-
+/* Estilo específico para inputs de fator e polegadas */
+.fator-input,
 .polegadas-input {
   height: auto;
-  width: 262px;
-  color: black !important; /* !important para garantir que a cor seja aplicada */
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
+  width: 48%; /* Ajuste de largura para inputs de mesmo tamanho */
+  margin-right: 4%; /* Espaçamento entre inputs */
+}
+
+.nivel-inicial-input,
+.nivel-final-input {
+  height: auto;
+  width: 48%; /* Ajuste de largura para inputs de mesmo tamanho */
+  margin-right: 4%; /* Espaçamento entre inputs */
 }
 
 /* Alterar a cor da borda dos inputs quando focados */
@@ -109,58 +128,49 @@ h1 {
 
 /* Estilo para os botões de resultado */
 .result-row button {
-  flex: 1;
-  margin: 0 2px;
-  padding: 15px; /*  padding dos botões */
-  border: 2px solid #bdb9b9;
-  border-radius: 15px; /*  raio do border-radius */
-  font-size: 14px;
+  flex-grow: 1; /* Garantir que todos ocupem o espaço disponível igualmente */
+  margin: 0 4px; /* Ajuste do espaçamento entre inputs/botões */
+  padding: 15px; /* padding dos botões */
+  border-radius: 10px; /* raio do border-radius */
+  font-size: 16px;
   font-weight: bold; /* Tamanho da fonte dos botões */
-  color: #000 !important; /* Cor do texto dos botões */
-}
-
-.result-row button:hover {
-  background-color: #cccccc; /* Cor de fundo ao passar o mouse */
+  color: #312c2c !important; /* Cor do texto dos botões */
 }
 
 /* Estilo específico para botões na linha de botões */
 .button-row button {
-  background-color: #13293d;
+  background-color: #192742;
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Efeito de transição suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  box-shadow: 0 0 5px rgba(0, 100, 148, 0.6); /* Efeito de neon mais suave */
 }
 
 .button-row button:hover {
   background-color: #006494; /* Cor do botão ao passar o mouse */
-  box-shadow: 0 0 10px rgba(0, 242, 254, 0.8); /* Aumenta levemente o brilho no hover */
+  box-shadow: 0 0 10px rgba(12, 98, 102, 0.8); /* Aumenta levemente o brilho no hover */
 }
 
 /* Estilo específico para cada botão */
-.calculate-nitrogenio {
-  background-color: #13293d; /* Cor de fundo padrão */
-}
-
-.calculate-oxigenio {
-  background-color: #13293d; /* Cor de fundo azul */
-}
-
+.calculate-nitrogenio,
+.calculate-oxigenio,
 .calculate-argonio {
-  background-color: #13293d; /* Cor de fundo verde */
+  background-color: #192742; /* Cor de fundo padrão */
 }
 
 .calculate-nitrogenio:hover,
 .calculate-oxigenio:hover,
 .calculate-argonio:hover {
-  background-color: #0e3a6f; /* Cor ao passar o mouse */
+  background-color: #0d3e7a; /* Cor ao passar o mouse */
 }
 
 .button-row button:disabled,
 .result-row button:disabled {
-  background-color: #cccccc;
+  background-color: #dddddd;
   cursor: not-allowed; /* Cursor indicando que o botão está desativado */
 }
 
@@ -176,11 +186,11 @@ h1 {
 /* Estilo específico para o botão Limpar */
 #clear {
   background-color: #13293d;
-  color: #ffffff !important;
-  font-size: 15px;
+  color: #ffc107 !important;
+  font-size: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
@@ -189,15 +199,55 @@ h1 {
 
 #clear:hover {
   background-color: #006494; /* Cor do botão ao passar o mouse */
-  box-shadow: 0 0 10px rgba(0, 242, 254, 0.8); /* Aumenta levemente o brilho no hover */
-  font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  color: #ffffff !important; /* Cor branca para o texto no hover */
+  box-shadow: 0 0 10px rgba(12, 98, 102, 0.8); /* Aumenta levemente o brilho no hover */
 }
 
-/* Estilo específico para o tamanho total */
-.total-size {
-  width: 300px; /* Largura total do container */
-  height: auto; /* Altura automática */
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%; /* Largura total em dispositivos móveis */
+    height: 75vh;
+    padding: 15px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+  }
+
+  h1 {
+    font-size: 30px; /* Diminui o tamanho do título */
+    margin-bottom: 20px; /* Ajusta o espaçamento */
+  }
+
+  .input-row input,
+  .result-row button {
+    width: 95%; /* Inputs e botões ocupam toda a largura */
+    margin: 5px 0.5; /* Espaçamento uniforme */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    padding: 10px;
+  }
+
+  .button-row button {
+    width: 32%; /* Botões lado a lado ocupam 100% juntos */
+    margin: 1%; /* Espaçamento entre botões */
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .fator-input,
+  .nivel-inicial-input,
+  .nivel-final-input,
+  .polegadas-input {
+    width: 100%; /* Todos os inputs ocupam a largura total */
+  }
+  
+  .footer {
+    font-size: 10px; /* Reduz tamanho do texto do rodapé */
+    margin-top: 10px;
+  }
 }
