@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gas Calculator</title>
-    <!-- Ícone padrão -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Ícones para dispositivos Apple -->
+    <link rel="icon" href="Favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-    
-    <!-- Ícones para modo claro e escuro -->
-    <link rel="icon" href="favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
-    <link rel="apple-touch-icon" href="apple-icon-light.png" media="(prefers-color-scheme: light)">
-    <link rel="apple-touch-icon" href="apple-icon-dark.png" media="(prefers-color-scheme: dark)">
-
-    <!-- Estilo -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de Gases</h1>
-        <div class="input-row">
-            <div class="tooltip-container">
-                <input id="fator" class="fator-input" type="text" step="any" placeholder="Fator" autofocus>
-                <span class="tooltip">Fator</span>
-            </div>
-        </div>
+        <h1 id="natal-temp">🎄  Feliz Natal!!!  🎅</h1>
+        <h2 id="main-title">Calculadora de Gases</h2>
+        <!-- Nível Inicial e Nível Final na mesma linha -->
         <div class="input-row">
             <div class="tooltip-container">
                 <input type="text" id="nivelInicial" class="nivel-inicial-input" placeholder="Nível Inicial">
@@ -40,17 +26,24 @@
                 <span class="tooltip">Nível Final</span>
             </div>
         </div>
-        <div class="button-row">
-            <button id="calculateNitrogenio" class="calculate-nitrogenio">Nitrogênio</button>
-            <button id="calculateOxigenio" class="calculate-oxigenio">Oxigênio</button>
-            <button id="calculateArgonio" class="calculate-argonio">Argônio</button>
-        </div>
+        <!-- Fator e Polegadas na mesma linha -->
         <div class="input-row">
+            <div class="tooltip-container">
+                <input id="fator" class="fator-input" type="text" step="any" placeholder="Fator" autofocus>
+                <span class="tooltip">Fator</span>
+            </div>
             <div class="tooltip-container">
                 <input type="text" id="polegadas" class="polegadas-input polegadas-field" placeholder="Polegadas" disabled>
                 <span class="tooltip">Polegadas</span>
             </div>
         </div>
+        <!-- Botões de cálculo -->
+        <div class="button-row">
+            <button id="calculateNitrogenio" class="calculate-nitrogenio">Nitrogênio</button>
+            <button id="calculateOxigenio" class="calculate-oxigenio">Oxigênio</button>
+            <button id="calculateArgonio" class="calculate-argonio">Argônio</button>
+        </div>
+        <!-- Botões de resultado -->
         <div class="result-row">
             <button id="pesoLiquido" class="result-peso-liquido">Peso Líquido</button>
             <button id="m3" class="result-m3">M³</button>
@@ -59,7 +52,7 @@
             <button id="clear" class="clear-button">Limpar</button>
         </div>
         <div class="footer">
-            <p>luizdovale / versão 2.5</p>
+            <p>luizdovale / versão 3.0.2</p>
         </div>
     </div>
     <script src="script.js"></script>
