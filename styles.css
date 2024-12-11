@@ -82,8 +82,14 @@ h2 {
 .polegadas-input {
   height: auto;
   width: 48%; /* Ajuste de largura para inputs de mesmo tamanho */
-  margin-right: 4%; /* Espaçamento entre inputs */
+  margin-right: 2%; /* Espaçamento entre inputs */
 }
+
+.polegadas-input {
+  color: black !important; /* Cor preta para o texto */
+  font-size: 20px;
+}
+
 
 .nivel-inicial-input,
 .nivel-final-input {
@@ -132,7 +138,7 @@ h2 {
   margin: 0 4px; /* Ajuste do espaçamento entre inputs/botões */
   padding: 15px; /* padding dos botões */
   border-radius: 10px; /* raio do border-radius */
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold; /* Tamanho da fonte dos botões */
   color: #312c2c !important; /* Cor do texto dos botões */
 }
