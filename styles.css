@@ -85,9 +85,11 @@ h2 {
   margin-right: 2%; /* Espaçamento entre inputs */
 }
 
-.polegadas-input {
-  color: black !important; /* Cor preta para o texto */
-  font-size: 20px;
+.polegadas-input:disabled {
+  background-color: white;
+  color: black;
+  cursor: not-allowed; /* Cursor de desativado */
+  opacity: 1; /* Manter a visibilidade plena */
 }
 
 
