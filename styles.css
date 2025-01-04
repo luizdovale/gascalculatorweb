@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url('imagem de fundo natal.jpg'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho real da sua imagem */
+  background-image: url('fundo.jpg'); /* Substitua 'caminho-da-imagem.jpg' pelo caminho real da sua imagem */
   background-size: cover; /* Faz a imagem preencher a tela inteira */
   background-position: center; /* Centraliza a imagem na tela */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
