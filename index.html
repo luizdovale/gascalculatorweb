@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -49,10 +49,18 @@
         </div>
         <div class="result-row">
             <button id="clear" class="clear-button">Limpar</button>
+            <button id="balanca" class="balanca-button" onclick="window.location.href='balanca.html'">
+                ↪ Cálculo Balança 
+            </button>
         </div>
         <div class="footer">
-            <p>luizdovale / versão 3.1.2</p>
+            <p>luizdovale / versão 3.8.1</p>
         </div>
+    </div>
+    <!-- Modal de erro -->
+    <div id="errorModal" class="modal">
+        <p>Por favor, insira um valor válido para o Peso Líquido.</p>
+        <button onclick="fecharModal()">OK</button>
     </div>
     <script src="script.js"></script>
 </body>
