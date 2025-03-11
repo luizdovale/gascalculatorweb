@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Gases</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gases</h1>
+        <div class="input-row">
+            <div class="tooltip-container">
+                <input type="number" id="pesoliquido" class="peso-liquido-input" placeholder="Peso líquido">
+                <span class="tooltip">Peso Líquido</span>
+            </div>
+            <div class="tooltip-container">
+                <input type="text" id="resultm3" class="result-m3" placeholder="Resultado M³" disabled>
+                <span class="tooltip">Resultado M³</span>
+            </div>
+        </div>
+
+        <div class="button-row">
+            <button id="calculateNitrogenio" class="calculate-nitrogenio">Nitrogênio</button>
+            <button id="calculateOxigenio" class="calculate-oxigenio">Oxigênio</button>
+            <button id="calculateArgonio" class="calculate-argonio">Argônio</button>
+        </div>
+
+        <div class="result-row">
+            <button id="clear" class="clear-button">Limpar</button>
+            <button id="balanca" class="balanca-button" onclick="window.location.href='index.html'">
+                ↩ Cálculo Fator 
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>luizdovale / versão 3.8.1</p>
+        </div>
+    </div>
+
+    <!-- Modal de erro -->
+    <div id="errorModal" class="modal">
+        <p>Por favor, insira um valor válido para o Peso Líquido.</p>
+        <button onclick="fecharModal()">OK</button>
+    </div>
+
+    <script>
+        function calcularM3(fator) {
+            let pesoLiquidoInput = document.getElementById("pesoliquido");
+            let pesoLiquido = parseFloat(pesoLiquidoInput.value);
+            let resultadoInput = document.getElementById("resultm3");
+
+            if (isNaN(pesoLiquido) || pesoLiquido <= 0) {
+                abrirModal(); // Exibe o modal de erro
+                resultadoInput.value = "";
+                return;
+            }
+
+            let resultado = pesoLiquido * fator;
+            
+            let resultadoFormatado = resultado.toLocaleString("pt-BR", {
+                minimumFractionDigits: 1,
+                maximumFractionDigits: 3
+            }).replace(/,?0+$/, ""); // Remove zeros desnecessários
+
+            resultadoInput.value = resultadoFormatado;
+        }
+
+        function abrirModal() {
+            document.getElementById("errorModal").style.display = "block";
+        }
+
+        function fecharModal() {
+            document.getElementById("errorModal").style.display = "none";
+        }
+
+        document.getElementById("calculateNitrogenio").addEventListener("click", function() {
+            calcularM3(0.862);
+        });
+
+        document.getElementById("calculateOxigenio").addEventListener("click", function() {
+            calcularM3(0.754);
+        });
+
+        document.getElementById("calculateArgonio").addEventListener("click", function() {
+            calcularM3(0.604);
+        });
+
+        document.getElementById("clear").addEventListener("click", function() {
+            document.getElementById("pesoliquido").value = "";
+            document.getElementById("resultm3").value = "";
+            fecharModal(); // Garante que o modal também feche ao limpar
+        });
+    </script>
+</body>
+</html>
