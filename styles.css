@@ -223,7 +223,7 @@ h2 {
 
 .button-row button:disabled,
 .result-row button:disabled {
-  background-color: #dddddd;
+  background-color: #ffff;
   cursor: not-allowed; /* Cursor indicando que o botão está desativado */
 }
 
