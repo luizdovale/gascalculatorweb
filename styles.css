@@ -90,15 +90,6 @@ h2 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de flutuação */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave ao interagir */
 }
-#resultm3 {
-    color: black !important; /* Define a cor do texto como preto */
-    font-weight: bold !important; /* Define o texto como negrito */
-    font-size: 20px !important; /* Define o tamanho do texto como 20px */
-    background-color: white !important; /* Mantém o fundo branco */
-    border: 1px solid #ccc; /* Adiciona uma borda leve */
-    padding: 8px; /* Ajusta o espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    }
 .input-pesoliquido {
   width: 92%; /* Faz o botão ocupar toda a largura disponível */
   margin: 5px 0; /* Espaçamento apenas acima e abaixo */
@@ -111,7 +102,11 @@ h2 {
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efeito de transição */
   margin-bottom: 10px;
 }
-
+#resultm3 {
+  color: black !important; /* Define a cor do texto como preto */
+  font-size: 20px !important; /* Define o tamanho do texto como 20px */
+  background-color: white; /* Mantém o fundo branco */
+}
 .result-row button {
   height: auto;
   width: 48%; /* Ajuste de largura para manter o alinhamento responsivo */
