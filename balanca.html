@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Gases</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de Gases</h1>
         <div class="input-row">
             <div class="tooltip-container">
-                <input type="number" id="pesoliquido" class="peso-liquido-input" placeholder="Peso líquido">
+                <input type="text" id="pesoliquido" class="peso-liquido-input" placeholder="Peso líquido" oninput="formatarPeso()">
                 <span class="tooltip">Peso Líquido</span>
             </div>
             <div class="tooltip-container">
@@ -49,9 +47,10 @@
     <script>
         function calcularM3(fator) {
             let pesoLiquidoInput = document.getElementById("pesoliquido");
-            let pesoLiquido = parseFloat(pesoLiquidoInput.value);
             let resultadoInput = document.getElementById("resultm3");
-
+            
+            let pesoLiquido = parseFloat(pesoLiquidoInput.value.replace(" kg", ""));
+            
             if (isNaN(pesoLiquido) || pesoLiquido <= 0) {
                 abrirModal(); // Exibe o modal de erro
                 resultadoInput.value = "";
@@ -65,7 +64,15 @@
                 maximumFractionDigits: 3
             }).replace(/,?0+$/, ""); // Remove zeros desnecessários
 
-            resultadoInput.value = resultadoFormatado;
+            resultadoInput.value = resultadoFormatado + " m³";
+        }
+
+        function formatarPeso() {
+            let pesoLiquidoInput = document.getElementById("pesoliquido");
+            let valor = pesoLiquidoInput.value.replace(" Kg", "").trim();
+            if (!isNaN(valor) && valor !== "") {
+                pesoLiquidoInput.value = valor + " Kg";
+            }
         }
 
         function abrirModal() {
