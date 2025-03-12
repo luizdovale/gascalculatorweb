@@ -90,7 +90,8 @@ h2 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de flutuação */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave ao interagir */
 }
-.input-pesoliquido {
+.input-pesoliquido,
+.result-m3 {
   width: 92%; /* Faz o botão ocupar toda a largura disponível */
   margin: 5px 0; /* Espaçamento apenas acima e abaixo */
   padding: 15px; /* Ajuste do padding */
@@ -103,8 +104,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.result-row button,
-.result-m3 input {
+.result-row button {
   height: auto;
   width: 48%; /* Ajuste de largura para manter o alinhamento responsivo */
   margin-right: 4%; /* Espaçamento entre os botões */
