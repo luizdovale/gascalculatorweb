@@ -71,7 +71,7 @@
             let pesoLiquidoInput = document.getElementById("pesoliquido");
             let valor = pesoLiquidoInput.value.replace(" Kg", "").trim();
             if (!isNaN(valor) && valor !== "") {
-                pesoLiquidoInput.value = valor + " Kg";
+                pesoLiquidoInput.value = valor + "";
             }
         }
 
