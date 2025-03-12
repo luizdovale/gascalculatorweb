@@ -283,7 +283,7 @@ h2 {
   .result-row button {
     width: 95%; /* Inputs e botões ocupam toda a largura */
     margin: 5px 0.5; /* Espaçamento uniforme */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
     padding: 10px;
   }
 
