@@ -94,7 +94,7 @@ h2 {
     color: black !important; /* Define a cor do texto como preto */
     font-weight: bold !important; /* Define o texto como negrito */
     font-size: 20px !important; /* Define o tamanho do texto como 20px */
-    background-color: white; /* Mantém o fundo branco */
+    background-color: white !important; /* Mantém o fundo branco */
     border: 1px solid #ccc; /* Adiciona uma borda leve */
     padding: 8px; /* Ajusta o espaçamento interno */
     text-align: center; /* Centraliza o texto */
