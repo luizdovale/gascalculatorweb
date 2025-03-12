@@ -302,7 +302,8 @@ h2 {
   .tooltip {
   font-size: 8px;
 }
-  .polegadas-input {
+  .polegadas-input,
+  .resultm3 {
   color: black !important; /* Cor preta para o texto */
   font-size: 20px;
 }
