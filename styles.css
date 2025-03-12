@@ -103,7 +103,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.result-row button {
+.result-row button,
+.result-m3 input {
   height: auto;
   width: 48%; /* Ajuste de largura para manter o alinhamento responsivo */
   margin-right: 4%; /* Espaçamento entre os botões */
