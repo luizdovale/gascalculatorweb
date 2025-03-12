@@ -90,7 +90,7 @@ h2 {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de flutuação */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animação suave ao interagir */
 }
-.resultm3 {
+#resultm3 {
     color: black !important; /* Define a cor do texto como preto */
     font-weight: bold !important; /* Define o texto como negrito */
     font-size: 20px !important; /* Define o tamanho do texto como 20px */
