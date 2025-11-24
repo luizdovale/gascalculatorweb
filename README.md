@@ -1,3 +1,6 @@
+
+<img width="1536" height="532" alt="ImagemReadme" src="https://github.com/user-attachments/assets/794aaed2-01c8-42ae-8078-abae5527a28b" />
+
 # Calculadora de Gases versão Web Mobile
 
 https://luizdovale.github.io/gascalculatorweb/
