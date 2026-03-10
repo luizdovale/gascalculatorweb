@@ -1,92 +1,73 @@
 
-<img width="1536" height="532" alt="ImagemReadme" src="https://github.com/user-attachments/assets/794aaed2-01c8-42ae-8078-abae5527a28b" />
+<img width="1536" height="532" alt="ImagemReadme" src="https://github.com/user-attachments/assets/58628b39-ef37-4298-8715-e79683639167" />
 
-# Calculadora de Gases versão Web Mobile
+# GasCalculator
 
-https://luizdovale.github.io/gascalculatorweb/
-
-![Licença](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## Índice
-
-- [Descrição](#descrição)
-- [Funcionalidades](#funcionalidades)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+https://luizdovale.github.io/Calculadora-de-Gases/
 
 ## Descrição
-
-A *Calculadora de Gases* é uma aplicação simples que permite calcular o peso líquido e o volume em metros cúbicos (m³) de gases do Ar, como Nitrogênio, Oxigênio e Argônio, com base nas polegadas descarregadas. Este projeto foi desenvolvido para facilitar o processo de cálculo após o descarregamento dos produtos, permitindo uma rápida obtenção de resultados através de uma interface intuitiva.
+O **GasCalculator** é um aplicativo desenvolvido em **Flutter** para auxiliar no cálculo de peso líquido e volume em metros cúbicos de gases após o descarregamento. É uma ferramenta essencial para motoristas que transportam produtos perigosos como nitrogênio, oxigênio e argônio.**
 
 ## Funcionalidades
-
-- Cálculo de peso líquido e volume (em m³) para Nitrogênio, Oxigênio e Argônio.
-- Interface simples e amigável com entradas para nível inicial, nível final e fator.
-- Limpeza rápida dos campos e dos resultados.
-- Responsivo e acessível em diferentes dispositivos.
-
-## Instalação
-
-1. Clone este repositório para sua máquina local:
-
-    ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
-    ```
-
-2. Navegue até o diretório do projeto:
-
-    ```bash
-    cd nome-do-repositorio
-    ```
-
-3. Abra o arquivo `index.html` em qualquer navegador moderno.
-
-## Como Usar
-
-1. Insira o **fator** do gás que deseja calcular no campo correspondente.
-2. Preencha os campos de **Nível Inicial** e **Nível Final**.
-3. Selecione o gás que deseja calcular (Nitrogênio, Oxigênio, ou Argônio) pressionando o respectivo botão.
-4. O resultado será exibido nos campos de **Peso Líquido** e **M³**.
-5. Use o botão **Limpar** para resetar todos os campos e realizar novos cálculos.
+- Cálculo rápido e preciso de **peso líquido** e **volume**.
+- Interface simples e intuitiva.
+- Suporte a diferentes tipos de gases.
+- Tema claro e escuro.
+- Calculadora comum integrada.
 
 ## Tecnologias Utilizadas
+- **Flutter** (Dart)
+- **Google Fonts** para estilização.
+- **Intl** para formatação de números e datas.
+- **Vibration** para feedback háptico.
 
-- **HTML5**: Estrutura básica da aplicação.
-- **CSS3**: Estilização da interface, incluindo efeitos visuais e responsividade.
-- **JavaScript**: Lógica de cálculo e manipulação do DOM.
-  
+## Como Instalar e Executar
+
+### Requisitos
+- Flutter SDK (>=2.12.0)
+- Dart SDK compatível
+- Android Studio ou VS Code com extensão Flutter
+
+### Passos
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/gascalculator.git
+   cd gascalculator
+   ```
+
+2. Instale as dependências:
+   ```sh
+   flutter pub get
+   ```
+
+3. Execute o aplicativo:
+   ```sh
+   flutter run
+   ```
+
+## Como Buildar para Web
+Caso queira gerar a versão Web:
+```sh
+flutter build web
+```
+Os arquivos serão gerados na pasta `build/web/`, podendo ser hospedados no **GitHub Pages** ou em um servidor próprio.
+
+## Publicação
+- O aplicativo está disponível na **Play Store** para Android.
+- Para iOS, o site responsivo é recomendado.
+
 ## Contribuição
+Se deseja contribuir:
+1. Faça um fork do repositório.
+2. Crie uma branch com sua funcionalidade (`git checkout -b minha-feature`).
+3. Commit suas alterações (`git commit -m 'Adicionando nova feature'`).
+4. Faça push (`git push origin minha-feature`).
+5. Abra um Pull Request.
 
-Contribuições são bem-vindas! Sinta-se à vontade para fazer um **fork** deste repositório, criar uma nova branch com suas alterações e enviar um **pull request**. 
-
-1. Faça o **fork** do projeto
-2. Crie uma **branch** para sua feature:
-
-    ```bash
-    git checkout -b feature/nome-da-feature
-    ```
-
-3. Faça **commit** das suas alterações:
-
-    ```bash
-    git commit -m 'Adicionei nova feature'
-    ```
-
-4. Envie para o repositório remoto:
-
-    ```bash
-    git push origin feature/nome-da-feature
-    ```
-
-5. Abra um **pull request**
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+## Contato
+📧 Email: luizdovaletech@gmail.com
+🌎 Site: https://luizdovaletech.vercel.app/
+🚛 Criado por **Luiz Fernando**
 
 ---
-
-Feito por Luiz Fernando (https://github.com/luizdovale)
+> "Facilitando o dia a dia dos motoristas de transporte de gases!"
