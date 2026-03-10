@@ -20,6 +20,9 @@ jobs:
           flutter-version: '3.x'
           channel: 'stable'
 
+      - name: Clean Build
+        run: flutter clean
+
       - name: Install dependencies
         run: flutter pub get
 

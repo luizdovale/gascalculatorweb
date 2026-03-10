@@ -2,7 +2,7 @@ name: gascalculator
 description: "Calculadora de Gases"
 publish_to: 'none'
 
-version: 3.2.6+11
+version: 3.2.7+12
 
 environment:
   sdk: '>=3.0.0 <4.0.0' # versão mínima do SDK para 3.0.0
