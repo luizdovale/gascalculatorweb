@@ -4,7 +4,7 @@ echo Atualizando Icones e Gerando Build Web...
 echo ==========================================
 
 :: 1. Gerar os ícones novamente (garante que tudo está sincronizado)
-call flutter pub run flutter_launcher_icons:main
+call dart run flutter_launcher_icons
 
 :: 2. Limpar build anterior
 call flutter clean

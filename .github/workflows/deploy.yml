@@ -21,7 +21,7 @@ jobs:
         run: flutter pub get
 
       - name: Generate Launcher Icons
-        run: flutter pub run flutter_launcher_icons:main
+        run: dart run flutter_launcher_icons
 
       - name: Build Web
         run: flutter build web --release --base-href "/gascalculatorweb/"
