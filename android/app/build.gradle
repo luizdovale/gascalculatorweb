@@ -1,0 +1,76 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader("UTF-8") { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode")
+if (flutterVersionCode == null) {
+    flutterVersionCode = "1"
+}
+
+def flutterVersionName = localProperties.getProperty("flutter.versionName")
+if (flutterVersionName == null) {
+    flutterVersionName = "1.0"
+}
+
+android {
+    namespace = "com.macedoovale.gascalculator"
+    compileSdk 36
+    ndkVersion '27.0.11718014 rc1'
+
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\maced\\OneDrive\\Documentos\\ANTIGRAVITY\\gascalculator\\key.jks')
+            storePassword "510688"
+            keyAlias "calculadora"
+            keyPassword "510688"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.macedoovale.gascalculator"
+        minSdk 28
+        targetSdk 36
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true  // Habilitado a ofuscação
+            shrinkResources true  // Reduz recursos não utilizados
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            ndk {
+                debugSymbolLevel 'FULL' // Gerar símbolos de depuração para código nativo
+            }
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildToolsVersion '30.0.3'
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Garante compatibilidade com o Java 1.8
+    }
+}
+
+flutter {
+    source = "../.."
+}

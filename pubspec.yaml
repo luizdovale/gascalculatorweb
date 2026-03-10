@@ -1,0 +1,39 @@
+name: gascalculator
+description: "Calculadora de Gases"
+publish_to: 'none'
+
+version: 3.2.6+11
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # versão mínima do SDK para 3.0.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  intl: ^0.20.2 # dependência do pacote intl
+  google_fonts: ^8.0.2
+  vibration: ^3.1.0
+  shared_preferences: ^2.5.4
+  package_info_plus: ^8.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    backgroundColor: "#ffffff"
+    themeColor: "#ffffff"
+
+flutter:
+  uses-material-design: true
+
+

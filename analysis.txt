@@ -1,0 +1,12 @@
+Analyzing splash_screen.dart...                                 
+
+   info - Constructors for public widgets should have a named 'key' parameter - lib\splash_screen.dart:6:7 - use_key_in_widget_constructors
+   info - Invalid use of a private type in a public API - lib\splash_screen.dart:8:3 - library_private_types_in_public_api
+  error - Invalid constant value - lib\splash_screen.dart:35:49 - invalid_constant
+  error - The getter 'outBack' isn't defined for the type 'Curves' - lib\splash_screen.dart:35:56 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\splash_screen.dart:73:41 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\splash_screen.dart:89:39 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\splash_screen.dart:108:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\splash_screen.dart:110:53 - deprecated_member_use
+
+8 issues found. (ran in 2.1s)
