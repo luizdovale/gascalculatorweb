@@ -3,7 +3,7 @@
 
 # GasCalculator
 
-https://luizdovale.github.io/gascalulatorweb/
+https://luizdovale.github.io/gascalculatorweb/
 
 ## Descrição
 O **GasCalculator** é um aplicativo desenvolvido em **Flutter** para auxiliar no cálculo de peso líquido e volume em metros cúbicos de gases após o descarregamento. É uma ferramenta essencial para motoristas que transportam produtos perigosos como nitrogênio, oxigênio e argônio.**
