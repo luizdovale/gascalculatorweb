@@ -262,68 +262,92 @@ class _GasCalculatorState extends State<GasCalculator> {
     return Drawer(
       child: Container(
         color: Colors.white,
-        child: ListView(
-          padding: EdgeInsets.zero,
+        child: Column(
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
                 color: AppConstants.primaryColor,
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    AppConstants.primaryColor,
+                    AppConstants.primaryColor.withOpacity(0.8),
+                  ],
+                ),
               ),
-              child: Text(
-                'Menu',
-                style: TextStyle(
-                  color: Color(0xFFf2f2f2),
-                  fontSize: 22,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.fire_truck, color: Colors.white, size: 40),
+                    SizedBox(height: 10),
+                    Text(
+                      'Menu Principal',
+                      style: GoogleFonts.outfit(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
-            ListTile(
-              leading: Icon(Icons.calculate, color: Colors.black),
-              title: Text('Calculadora Comum',
-                  style: TextStyle(color: Colors.black)),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => Calculator()),
-                );
-              },
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: <Widget>[
+                  _buildDrawerItem(
+                    icon: Icons.calculate,
+                    label: 'Calculadora Comum',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Calculator()),
+                      );
+                    },
+                  ),
+                  _buildDrawerItem(
+                    icon: Icons.balance,
+                    label: 'Cálculo Balança',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => CalculoBalancaScreen()),
+                      );
+                    },
+                  ),
+                  _buildDrawerItem(
+                    icon: Icons.history,
+                    label: 'Histórico',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => HistoryScreen()),
+                      );
+                    },
+                  ),
+                ],
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.balance, color: Colors.black),
-              title: Text('Cálculo Balança',
-                  style: TextStyle(color: Colors.black)),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                      builder: (context) => CalculoBalancaScreen()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.history, color: Colors.black),
-              title: Text('Histórico', style: TextStyle(color: Colors.black)),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => HistoryScreen()),
-                );
-              },
-            ),
-            SizedBox(height: 250),
-            ListTile(
-              title: Column(
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
                 children: [
                   Text(
-                    'versão $_version+$_buildNumber\nluizdovaletech',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
+                    'versão $_version+$_buildNumber',
+                    style: GoogleFonts.outfit(
                       fontSize: 14,
-                      color: Colors.black87,
+                      color: AppConstants.primaryColor.withOpacity(0.6),
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 20),
-                  Icon(
-                    Icons.fire_truck_outlined,
-                    color: Color(0xFF000000),
-                    size: 30.0,
+                  Text(
+                    'luizdovaletech',
+                    style: GoogleFonts.outfit(
+                      fontSize: 12,
+                      color: AppConstants.primaryColor.withOpacity(0.4),
+                    ),
                   ),
                 ],
               ),
@@ -331,6 +355,25 @@ class _GasCalculatorState extends State<GasCalculator> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildDrawerItem({
+    required IconData icon,
+    required String label,
+    required VoidCallback onTap,
+  }) {
+    return ListTile(
+      leading: Icon(icon, color: AppConstants.accentColor),
+      title: Text(
+        label,
+        style: GoogleFonts.outfit(
+          color: AppConstants.primaryColor,
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      onTap: onTap,
     );
   }
 
