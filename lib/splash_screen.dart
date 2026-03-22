@@ -120,13 +120,20 @@ class _SplashScreenState extends State<SplashScreen>
                             ),
                           ),
                           const SizedBox(height: 24),
-                          Text(
-                            AppConstants.appTitle.toUpperCase(),
-                            style: GoogleFonts.outfit(
-                              fontSize: 26,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.white,
-                              letterSpacing: 4.0, // Espaçamento senior
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                            child: FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                AppConstants.appTitle.toUpperCase(),
+                                maxLines: 1,
+                                style: GoogleFonts.outfit(
+                                  fontSize: 26,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.white,
+                                  letterSpacing: 4.0, // Espaçamento senior
+                                ),
+                              ),
                             ),
                           ),
                           const SizedBox(height: 8),
