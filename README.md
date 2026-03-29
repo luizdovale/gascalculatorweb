@@ -66,10 +66,23 @@ Se deseja contribuir:
 4. Faça push (`git push origin minha-feature`).
 5. Abra um Pull Request.
 
-## Contato
-📧 Email: luizdovaletech@gmail.com
-🌎 Site: https://luizdovaletech.vercel.app/
-🚛 Criado por **Luiz Fernando**
+---
+
+## 👨‍💻 Desenvolvido por
+
+**luizdovaletech**
+📧 *[luizdovaletech@gmail.com](mailto:luizdovaletech@gmail.com)*
 
 ---
+## 👨‍💻 Site do Desenvolvedor
+
+Luiz Fernando  
+🌐 https://valetechsolucoes.com.br
+## 📝 Licença
+---
+
+
 > "Facilitando o dia a dia dos motoristas de transporte de gases!"
+Este projeto está licenciado sob **MIT License**.
+
+---
