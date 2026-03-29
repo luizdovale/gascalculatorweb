@@ -82,7 +82,7 @@ Luiz Fernando
 ---
 
 
-> "Facilitando o dia a dia dos motoristas de transporte de gases!"
+> "Facilitando o dia a dia dos motoristas de transporte de gases!"<
 Este projeto está licenciado sob **MIT License**.
 
 ---
